@@ -1,0 +1,326 @@
+Q1. What is network topology?
+→ The physical or logical arrangement of network devices and cables.
+
+Q2. Name different types of network topologies.
+→ Bus, Star, Ring, Mesh, Tree, and Hybrid topologies.
+
+Q3. What is the difference between Bus, Star, and Ring topology?
+→ Bus uses one main cable; Star connects all devices to a central switch; Ring forms a closed loop.
+
+Q4. What are transmission media?
+→ The path or channel through which data travels in a network.
+
+Q5. What is the difference between guided and unguided media?
+→ Guided = uses cables (wired), Unguided = uses air (wireless).
+
+Q6. Which transmission medium is used in wired LAN?
+→ Twisted pair cable (mostly Cat5e or Cat6).
+
+Q7. What tool is used to simulate networks?
+→ Cisco Packet Tracer.
+
+Q8. What are the uses of Packet Tracer?
+→ To design, configure, and test computer networks virtually.
+
+Q9. How can you check connectivity between nodes?
+→ By using the ping command.
+
+Q10. What happens when you change the topology type?
+→ The structure and data flow of the network change.
+
+2. Setup a wired LAN using Layer 2 switch
+
+1. What is a LAN?
+→ A Local Area Network connects computers within a small area like a lab or office.
+
+2. What is the function of a Layer 2 switch?
+→ It connects devices in a LAN and forwards data based on MAC addresses.
+
+3. What type of cable is used for LAN connection?
+→ Ethernet cable (Cat5e or Cat6).
+
+4. What tool is used for testing cable connectivity?
+→ Cable tester.
+
+5. What is IP address configuration?
+→ Assigning a unique IP address to a device for communication.
+
+6. How do you assign an IP address to a PC?
+→ Through network settings or using DHCP.
+
+7. What is the purpose of the PING command?
+→ To test connectivity between two devices.
+
+8. What does a successful PING indicate?
+→ That the devices are connected and reachable.
+
+9. What is Wireshark used for?
+→ To capture and analyze network packets.
+
+10. What is shown in Wireshark when you capture PING packets?
+→ ICMP request and reply messages.
+
+3. Setup a WAN with wired and wireless LAN
+
+1. What is a WAN?
+→ A Wide Area Network connects multiple LANs over large distances.
+
+2. How is WAN different from LAN?
+→ WAN covers a large area; LAN is limited to small areas.
+
+3. What devices are used to connect two LANs?
+→ Routers.
+
+4. What is the purpose of a router in WAN?
+→ To route data between different networks.
+
+5. What is SSID?
+→ The name of a wireless network.
+
+6. How do you configure a wireless LAN in Packet Tracer?
+→ Add wireless router, connect PCs, set SSID, and configure IPs.
+
+7. What protocol is used for wireless communication?
+→ IEEE 802.11 (Wi-Fi).
+
+8. How can you check connectivity between two LANs?
+→ By using the ping command between devices.
+
+9. What is a packet in networking?
+→ A small unit of data transmitted over a network.
+
+10. What does the Packet Tracer simulation show during transfer?
+→ Movement of packets between sender and receiver.
+
+4. Subnetting and Subnet Mask
+
+1. What is subnetting?
+→ Dividing a large network into smaller sub-networks.
+
+2. Why do we need subnetting?
+→ To improve management, security, and reduce congestion.
+
+3. What is a subnet mask?
+→ A number that separates the network and host part of an IP address.
+
+4. How is subnet mask calculated?
+→ Based on number of required subnets or hosts using binary bits.
+
+5. How many hosts per subnet for a given mask?
+→ 
+2
+𝑛
+−
+2
+2
+n
+−2, where n = host bits.
+
+6. What is CIDR notation?
+→ Compact form like 192.168.1.0/24 showing network bits.
+
+7. Example of subnet mask for Class C network?
+→ 255.255.255.0 (/24).
+
+8. What is the range of private IP addresses?
+→ Class A: 10.0.0.0 – 10.255.255.255
+Class B: 172.16.0.0 – 172.31.255.255
+Class C: 192.168.0.0 – 192.168.255.255
+
+9. Difference between network ID and host ID?
+→ Network ID identifies the network; Host ID identifies the device.
+
+10. What command is used to find the subnet mask?
+→ ipconfig (Windows) or ifconfig (Linux).
+
+5. TCP Socket Programming
+
+1. What is a socket?
+→ An endpoint for communication between two programs over a network.
+
+2. What is TCP?
+→ Transmission Control Protocol – reliable, connection-oriented protocol.
+
+3. Difference between TCP and UDP?
+→ TCP is reliable and connection-based; UDP is faster and connectionless.
+
+4. Which layer uses TCP?
+→ Transport layer.
+
+5. Functions of socket(), bind(), listen(), accept()?
+→ Create, assign address, wait for connection, and accept client request.
+
+6. What is a client and server in socket program?
+→ Server provides service; client requests service.
+
+7. How does TCP ensure reliable transfer?
+→ Using acknowledgments, sequence numbers, and retransmission.
+
+8. What is a port number?
+→ A logical number identifying specific services on a host.
+
+9. Output of ‘Say Hello’ program?
+→ Displays “Hello” sent from client to server successfully.
+
+10. How is file transfer verified?
+→ By checking received data or comparing file contents.
+
+6. UDP Socket Programming
+
+1. What is UDP?
+→ User Datagram Protocol – fast, connectionless protocol.
+
+2. Difference between UDP and TCP?
+→ UDP doesn’t guarantee delivery; TCP does.
+
+3. What is meant by connectionless service?
+→ No setup before sending data.
+
+4. Is UDP reliable? Why or not?
+→ No, because it doesn’t resend lost packets.
+
+5. Real-life examples of UDP use?
+→ Online gaming, live streaming, video calls.
+
+6. Functions used for UDP communication?
+→ socket(), sendto(), and recvfrom().
+
+7. How do you send and receive files using UDP?
+→ By dividing files into packets and using send/receive functions.
+
+8. What types of files can be transferred?
+→ Text, image, or any small data files.
+
+9. What happens if a packet is lost in UDP?
+→ It’s not retransmitted automatically.
+
+10. Why is UDP preferred for audio/video transfer?
+→ It’s faster and delay-tolerant.
+
+7. HTTP, HTTPS & FTP Protocols
+
+1. What is HTTP?
+→ HyperText Transfer Protocol for web communication.
+
+2. What is HTTPS?
+→ Secure version of HTTP using encryption.
+
+3. What is FTP used for?
+→ Transferring files between client and server.
+
+4. Port numbers for HTTP, HTTPS, and FTP?
+→ HTTP – 80, HTTPS – 443, FTP – 21.
+
+5. Difference between HTTP and HTTPS?
+→ HTTPS encrypts data, HTTP does not.
+
+6. What protocol provides security to HTTPS?
+→ SSL/TLS.
+
+7. What is SSL/TLS?
+→ Security protocols providing encryption and authentication.
+
+8. How to simulate these in Packet Tracer?
+→ By setting up web and FTP servers and using client PCs.
+
+9. How can you test file transfer using FTP?
+→ Connect client and upload/download a file.
+
+10. What information can be seen in packet details?
+→ Source, destination, protocol type, and data.
+
+8. SSL Protocol (Wireshark)
+
+1. What is SSL?
+→ Secure Sockets Layer – provides encrypted communication.
+
+2. Purpose of SSL in communication?
+→ To secure data between client and server.
+
+3. What is TLS?
+→ Successor of SSL – more secure and modern.
+
+4. How to recognize SSL packets in Wireshark?
+→ By using the “ssl” or “tls” filter.
+
+5. What port is used for HTTPS?
+→ Port 443.
+
+6. What happens during SSL handshake?
+→ Exchange of certificates and key agreement.
+
+7. What is encryption?
+→ Converting data into unreadable form for security.
+
+8. Why is SSL important for banking or e-commerce?
+→ It protects personal and financial data.
+
+9. What are digital certificates?
+→ Proof of website authenticity issued by trusted authorities.
+
+10. How do you identify a secure website?
+→ URL starts with “https://” and shows a lock icon.
+
+11. Installing & Configuring DHCP Server
+
+1. What is DHCP?
+→ Dynamic Host Configuration Protocol – automatically assigns IP addresses.
+
+2. Function of DHCP server?
+→ To manage and provide IP addresses to clients.
+
+3. Advantages of DHCP?
+→ Saves time, avoids conflicts, and automates IP management.
+
+4. Difference between static and dynamic IP?
+→ Static = manually set; Dynamic = auto-assigned by DHCP.
+
+5. What is a DHCP lease?
+→ The time period a client can use an assigned IP.
+
+6. Steps of DHCP process (DORA)?
+→ Discover, Offer, Request, Acknowledge.
+
+7. How to configure DHCP in Packet Tracer?
+→ Enable DHCP on server, set IP pool, and connect clients.
+
+8. How do clients get IP automatically?
+→ By sending a DHCP request on the network.
+
+9. What command checks assigned IP?
+→ ipconfig (Windows).
+
+10. What happens when DHCP server fails?
+→ Devices won’t get IP; network communication fails.
+
+12. DNS Lookup
+
+1. What is DNS?
+→ Domain Name System – translates domain names to IPs.
+
+2. Purpose of DNS?
+→ To make websites accessible by names instead of numbers.
+
+3. Difference between URL and IP address?
+→ URL = human-readable name; IP = numeric address.
+
+4. What is forward lookup?
+→ Resolving a domain name to IP address.
+
+5. What is reverse lookup?
+→ Resolving an IP address to domain name.
+
+6. Function used for DNS resolution in code?
+→ gethostbyname() or getaddrinfo().
+
+7. Command to check DNS in Windows/Linux?
+→ nslookup or dig.
+
+8. Structure of a DNS query?
+→ Header, question, answer, authority, and additional sections.
+
+9. Common DNS record types?
+→ A, MX, CNAME, TXT, NS, PTR.
+
+10. What happens if DNS server isn’t reachable?
+→ Website names won’t resolve; internet access fails.
